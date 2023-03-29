@@ -3,14 +3,17 @@
     margin: 0;
 }
 body {
-    background-image: url('https://sessaodastres.files.wordpress.com/2018/10/791_orgulho-preconceito-05.jpg');
+    background-image: url(./assets/fundo.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: auto;
     color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
-    
+    height: 100vh;
     
     display: flex;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 div.ParteObrigatoria {
     padding: 10px;
@@ -28,6 +31,9 @@ div.ParteObrigatoria {
 }
 .ParteNumerada {
     border-radius: 10px;
+    height: 70%;
+    overflow-y: scroll;
+    margin-bottom: 10px;
 }
 footer{
     display: flex;
